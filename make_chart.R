@@ -3,7 +3,7 @@ library(package=extrafont)
 library(package=reshape2)
 library(package=grid)
 
-xkcd1205 <- read.csv('xkcd1205.csv', stringsAsFactors=FALSE)
+xkcd1205 <- read.csv('data/xkcd1205.csv', stringsAsFactors=FALSE)
 xkcd1205[xkcd1205==''] <- NA
 xkcd1205 <- melt(data=xkcd1205, id.vars='shave_off',
                  variable.name='frequency', value.name='time_spent')
